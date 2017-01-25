@@ -1,0 +1,41 @@
+body{
+	padding:30px;
+	font-family: "Consolas", sans-serif;
+}
+
+h1 {
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	color:#0099FF;
+}
+
+select, input, textarea {
+	
+	border: 1px solid #dadada;
+  /*-moz-border-radius: 3px;
+  -webkit-border-radius: 3px;*/
+  /*border-radius: 3px;*/
+  width:100%;
+  padding: 10px;
+  color:#272c32;
+  margin-bottom:5px;
+}
+
+button {
+	border-radius: 3px;
+  background:  #0099FF;
+  /*border:0;*/
+  border: 1px solid #0099FF;
+
+  padding: 16px 0;
+  color:#FFFFFF;
+  font-weight:800;
+  width:50%;
+  font-size:100%;
+  margin-left: 25%;
+  
+}
+
+fieldset {
+	width:60%;
+
+}

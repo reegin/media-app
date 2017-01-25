@@ -1,0 +1,33 @@
+body{
+	
+	padding:30px;
+	font-family: "Consolas", sans-serif;
+}
+h1{
+	text-align:center;
+}
+table{
+		width:100%;
+}
+td{
+	border:1px solid #069;
+	text-align:center;
+}
+.title{
+	background:#0099FF;
+	color:#FFFFFF;
+	font-weight:900;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+a{
+	color:#F00;
+	text-decoration:none;
+}
+a:hover{
+	color:#0099FF;
+}
+img{
+	width:150px;
+	height:100px;
+	padding:15px;
+}
