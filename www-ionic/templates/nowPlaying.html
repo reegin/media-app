@@ -1,0 +1,54 @@
+<link href="lib/ionic/css/ionic.css" rel="stylesheet">
+<link href="css/nowPlayStyle.css" rel="stylesheet">
+
+<ion-view view-title="Now Playing">
+  <ion-content>
+    
+	
+	<div class ="item item-image">
+		<img src="http://localhost/{{data.artimage}}">
+	</div> 
+	
+	
+	
+	<div class = "label">
+		
+		<p> 
+			<a> {{data.title}}</a>
+		</p>
+		<p> Artist: 
+			<a href="#/app/artists/{{data.id}}"> {{data.artname}}</a>
+		</p> 	
+	</div>
+
+	<audio  controls="controls" loop ng-src={{convert(link)}} style="width:100%; "></audio>
+
+	<div class="item range">
+		<i class="icon ion-ios-star-outline"></i>
+			<input type="range" name="volume">
+		<i class="icon ion-ios-star"></i>
+	</div>
+
+	
+
+	<div class = "media-button">
+		<ul>
+			<li>
+				<button class = "button icon ion-ios-more"></button>
+			</li>
+			<li>
+				<button class = "button icon ion-ios-skipbackward"></button>
+			</li>
+			<li>
+				<button class = "button icon ion-ios-play"></button>
+			</li>
+			<li>
+				<button class= "button icon ion-ios-skipforward"></button>
+			</li>
+			<li>
+				<button class= "button icon ion-ios-reload"></button>
+			</li>
+		</ul>
+	</div>				
+  </ion-content>
+</ion-view>

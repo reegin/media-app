@@ -1,0 +1,25 @@
+<ion-view view-title="Search">
+  <ion-content>
+    <div class="list list-inset">
+  <label class="item item-input">
+    <i class="icon ion-search placeholder-icon"></i>
+   <!--  <input type="text" placeholder="Search here"> -->
+   <input ng-model="search.title" placeholder="Search here!">
+  </label>
+</div> 
+  <ion-list>
+      <ion-item ng-repeat="track in datas | filter:search:strict" class="item item-thumbnail-left"  href="#/app/song/{{track.id}}">
+        <img src="http://localhost/{{track.art_image}}">
+        <h2>{{track.title}}</h2>
+        <p>{{track.art_name}}</p>
+        
+
+      </ion-item>
+    </ion-list>
+<!--<div class="bar bar-header">
+  <button class="button button-icon icon ion-navicon"></button>
+  <div class="h1 title">Header Buttons</div>
+  <button class="button button-clear button-positive">Edit</button>
+</div>-->
+  </ion-content>
+</ion-view>

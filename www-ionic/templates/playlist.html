@@ -1,0 +1,11 @@
+<ion-view view-title="Playlist">
+  <ion-content>
+    <div class="list">
+      <a ng-repeat="playlist in datas" class="item item-thumbnail-left" href="#/app/song/{{playlist.id}}">
+        <img src="http://localhost/{{playlist.artimage}}">
+        <h2>{{playlist.title}}</h2>
+        <p>{{playlist.artname}}</p>
+      </a>
+    </div>
+  </ion-content>
+</ion-view>

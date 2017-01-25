@@ -1,0 +1,11 @@
+<ion-view view-title="Artists">
+  <ion-content>
+  	<ion-list>
+  		<ion-item ng-repeat="artist in datas" class = "item item-avatar" href="#/app/artists/{{artist.id}}">
+  			<img src="http://localhost/{{artist.image}}">
+  			<h2>{{artist.name}}</h2>
+  		</ion-item>
+  	</ion-list>
+    
+  </ion-content>
+</ion-view>

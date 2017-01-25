@@ -1,0 +1,20 @@
+<ion-view view-title="All Track">
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="track in datas" class="item item-thumbnail-left" href="#/app/song/{{track.id}}">
+        <img src="http://localhost/{{track.art_image}}">
+        <h2>{{track.title}}</h2>
+        <p>{{track.art_name}}</p>
+        
+
+      </ion-item>
+    </ion-list>
+   <!--  <div class="list">
+      <a ng-repeat="track in datas" class="item item-thumbnail-left" href="#/app/song/{{track.id}}">
+        <img src="http://localhost/{{track.art_image}}">
+        <h2>{{track.title}}</h2>
+        <p>{{track.art_name}}</p>
+      </a>
+    </div> -->
+  </ion-content>
+</ion-view>
